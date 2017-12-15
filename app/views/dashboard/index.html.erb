@@ -1,0 +1,15 @@
+<h1>Hello, Rails!</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Contents</th>
+  </tr>
+
+  <% @notices.each do |notice| %>
+    <tr>
+      <td><%= notice.title %></td>
+      <td><%= notice.contents %></td>
+    </tr>
+  <% end %>
+</table>
